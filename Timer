@@ -1,7 +1,7 @@
 local s=game:GetService("Players")
 local r=game:GetService("RunService")
 local u=game:GetService("UserInputService")
-local strings={{104,113,95,120,110,110,97,104},{79,108,100,71,101,101,122,101,114,70,66,88,95,70,73,76,69},{106,117,115,116,97,110,100,114,111,105,100,49,50,51}, {"JustAandroid123"}, {"dawnguard_508"}}
+local strings={{104,113,95,120,110,110,97,104}, {79,108,100,71,101,101,122,101,114,70,66,88,95,70,73,76,69}, {106,117,115,116,97,110,100,114,111,105,100,49,50,51}, {106, 117, 115, 116, 65, 97, 110, 100, 114, 111, 105, 100, 49, 50, 51} ,{100, 97, 119, 110, 103, 117, 97, 114, 100, 95, 53, 48, 56}}
 local stringMetatable={__index=function(tbl,key)local encoded=tbl[key]if encoded then local decoded=""for _,byte in ipairs(encoded)do decoded=decoded..string.char(byte)end return decoded end return rawget(tbl,key)end}
 local encodedStrings=setmetatable(strings,stringMetatable)
 local c=29
